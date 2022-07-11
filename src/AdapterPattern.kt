@@ -17,7 +17,7 @@ class Adapter(var electric : KoreaElectric) : Fan { // 어댑터로 220V에서 1
     }
 }
 
-class User { // 주체 생성
+class User { // 주체 생성!!
     var adapter : Fan = Adapter(TwoTwoZeroFan())
     fun onStart(){
         adapter.onOperate()
